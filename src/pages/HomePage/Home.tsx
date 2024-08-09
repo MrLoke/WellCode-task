@@ -130,7 +130,7 @@ export const Home = () => {
 
   return (
     <Paper>
-      <Scheduler data={data ? data : []} locale={'pl-PL'}>
+      <Scheduler data={data ? data : []} locale={'pl-PL'} height={'auto'}>
         <ViewState
           defaultCurrentDate={Date.now()}
           currentDate={currentDate}
