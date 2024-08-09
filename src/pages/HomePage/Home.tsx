@@ -134,7 +134,6 @@ export const Home = () => {
         <ViewState
           defaultCurrentDate={Date.now()}
           currentDate={currentDate}
-          // currentDate={Date.now()}
           onCurrentDateChange={currentDateChange}
         />
         <EditingState onCommitChanges={commitChanges} />
