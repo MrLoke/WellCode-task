@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# WellCode recruitment task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live demo 👉 [https://wellcode-scheduler.web.app/](https://wellcode-scheduler.web.app/).
 
-Currently, two official plugins are available:
+## About the project 📝
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Since React Scheduler already provides ready-made components, I didn't see the point in dividing them into smaller ones, e.g. in the src/components folder, as I usually do. It's a simple application and didn't require much knowledge of React, more familiarity with the React Scheduler library. The task was simple, but I expected something more advanced to show my skills in React, e.g. custom components, custom hooks, or global state management.
 
-## Expanding the ESLint configuration
+## Tech stack 🧑‍💻
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React.js
+- TypeScript
+- React Scheduler
+- Material UI/React
+- React-router-dom
+- Firestore
+- Firebase hosting
+- Vite + React plugin
 
-- Configure the top-level `parserOptions` property like this:
+## How to run project ⚙️
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+In the project directory, you can run:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### `npm run dev`
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Runs the app in the development mode.\
+Open [http://localhost:5173/](http://localhost:5173/) to view it in the browser.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### `npm run build`
+
+Builds the app for production to the `dist` folder.
+
+**Note: If any given functionality does not work properly, it is due to my misinterpretation of how it should work properly.**
