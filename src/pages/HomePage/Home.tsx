@@ -47,7 +47,6 @@ export const Home = () => {
   const [currentDate, setCurrentDate] = useState<Date>(new Date(Date.now()));
   const [startDayHour, setStartDayHour] = useState<number>(9);
   const [endDayHour, setEndDayHour] = useState<number>(14);
-  console.log('data', data);
 
   const convertFirestoreDataToScheduler = (
     data: FirestoreEventData
@@ -87,7 +86,6 @@ export const Home = () => {
           ),
         });
       });
-      console.log('events', events);
       setData(events);
     });
 
