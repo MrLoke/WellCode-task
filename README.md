@@ -30,4 +30,4 @@ Open [http://localhost:5173/](http://localhost:5173/) to view it in the browser.
 
 Builds the app for production to the `dist` folder.
 
-**Note: If any given functionality does not work properly, it is due to my misinterpretation of how it should work properly.**
+**Note: If any given functionality does not work properly, it is due to my misinterpretation of how it should work properly. Btw something is wrong with github actions + firebase, so to deploy with changes in the code to the live server you need to use the command: `firebase deploy --token "$FIREBASE_TOKEN"` .**
